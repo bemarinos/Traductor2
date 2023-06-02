@@ -50,7 +50,7 @@ def home():
         response = request.json()    
         # Parse JSON array and get language    
         source_language = response[0]["language"]    
-        
+        translated_text = text
         #Hasta aqui cambié para fuente
         return render_template('index.html', translated_text=translated_text,lang_detected=source_language)
     
