@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import os
-import json
+import requests, json
 
 global translator_endpoint    
 global cog_key    
