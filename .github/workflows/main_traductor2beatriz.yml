@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'Traductor2Beatriz'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8EFF36FDB1644CA4A4DC42AEEBE53EC2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_10C306BEB93A46488E6272586041149F }}
