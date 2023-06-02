@@ -26,7 +26,7 @@ except Exception as ex:
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    if request.method == 'POST':
+    if request.method == "POST":
         text = request.form['text']
         r = requests.get(text)
         print(r.text)
