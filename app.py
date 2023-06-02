@@ -26,8 +26,8 @@ except Exception as ex:
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    print(request.method)
-    #if request.method == 'POST':
+    if request.method == 'POST':
+        print(request.method)
         #text = request.form['text']
         #Aquí es donde procesarías el texto. Por ahora, solo devolvemos el mismo texto.
         #source_language = ''
