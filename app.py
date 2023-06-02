@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import os
-import requests, json
+import json
 
 global translator_endpoint    
 global cog_key    
@@ -9,7 +9,7 @@ global cog_region
 from dotenv import load_dotenv
 
 
-app= Flask (__name__)
+app= Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -56,5 +56,5 @@ def home():
         #return render_template('index.html', translated_text=translated_text,lang_detected=source_language)  
     return render_template('index.html')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
