@@ -31,7 +31,7 @@ def home():
         #Aquí es donde procesarías el texto. Por ahora, solo devolvemos el mismo texto.
         #source_language = ''
         #translated_text = text
-        #source_language = 'en'    
+        source_language = 'en'    
         ##Use the Translator detect function    
         #path = '/detect'    
         #url = translator_endpoint + path    
@@ -50,7 +50,7 @@ def home():
         #response = request.json()    
         ## Parse JSON array and get language    
         #source_language = response[0]["language"]    
-        #translated_text = text
+        translated_text = text
         ##Hasta aqui cambié para fuente
         #return render_template('index.html', translated_text=translated_text,lang_detected=source_language)  
     return render_template('index.html')
