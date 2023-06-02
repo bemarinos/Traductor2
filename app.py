@@ -29,7 +29,7 @@ def home():
     if request.method == 'POST':
         #text = request.form['text']
         #Aquí es donde procesarías el texto. Por ahora, solo devolvemos el mismo texto.
-        #source_language = ''
+        source_language = ''
         #translated_text = text
         #source_language = 'en'    
         ##Use the Translator detect function    
